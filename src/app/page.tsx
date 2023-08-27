@@ -1,6 +1,5 @@
 import { TaskCard } from '@/components'
 import { prisma } from '@/libs/prisma'
-import Link from 'next/link'
 
 async function loadTasks() {
   return await prisma.task.findMany()
